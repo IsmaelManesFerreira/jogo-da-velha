@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo da Velha</h1>
+
+    <div class="inputs">
+      <input type="text" id="playerX" placeholder="Nome do Jogador X" />
+      <input type="text" id="playerO" placeholder="Nome do Jogador O" />
+    </div>
+
+    <div class="status-container">
+      <div class="timer" id="timer">00:00</div>
+      <div class="status" id="status">Insira os nomes e clique em "Novo Jogo"</div>
+    </div>
+
+    <div class="game-board" id="board">
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+      <button class="cell" data-cell></button>
+    </div>
+
+    <button class="new-game-btn" id="newGameBtn">Novo Jogo</button>
+
+    <div class="history">
+      <h3>Histórico de Jogadas</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
